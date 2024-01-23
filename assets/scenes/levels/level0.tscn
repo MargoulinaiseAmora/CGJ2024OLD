@@ -1,8 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://cycxan46ynlbx"]
 
-[ext_resource type="PackedScene" uid="uid://c7w6k64hvrw7x" path="res://assets/scenes/objects/cat.tscn" id="1_nraq5"]
+[ext_resource type="PackedScene" uid="uid://2fs6y23rkba3" path="res://assets/scenes/objects/cat.tscn" id="1_nraq5"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="cat" parent="." instance=ExtResource("1_nraq5")]
-position = Vector2(221, 280)
+[node name="Cat" parent="." instance=ExtResource("1_nraq5")]
+position = Vector2(146, 455)
+scale = Vector2(10, 10)

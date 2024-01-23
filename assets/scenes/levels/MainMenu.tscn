@@ -1,0 +1,84 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp2582cq3m1ns"]
+
+[ext_resource type="FontFile" uid="uid://3o6hg1k4m3er" path="res://assets/font/rainyhearts.ttf" id="1_wv6ih"]
+
+[sub_resource type="GDScript" id="GDScript_7oym3"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Jouer" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -187.0
+offset_top = -273.0
+offset_right = -72.0
+offset_bottom = -217.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_wv6ih")
+theme_override_font_sizes/font_size = 50
+text = "Jouer"
+flat = true
+alignment = 2
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -228.0
+offset_top = -198.0
+offset_right = -72.0
+offset_bottom = -142.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_wv6ih")
+theme_override_font_sizes/font_size = 50
+text = "Options"
+flat = true
+alignment = 2
+
+[node name="Quitter" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -172.0
+offset_top = -98.0
+offset_right = -75.0
+offset_bottom = -67.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_wv6ih")
+theme_override_font_sizes/font_size = 50
+text = "Quitter"
+flat = true
+alignment = 2
+script = SubResource("GDScript_7oym3")
